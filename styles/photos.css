@@ -32,6 +32,20 @@
 	align-items: start;
 	gap: 1rem;
     }
+    
+    .photo-card .content {
+	display: flex;
+	gap: 1rem;
+    }
+}
+@media print {
+    .photo-card {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1rem;
+	page-break-inside: avoid;
+    }
     .photo-card .content {
 	display: flex;
 	gap: 1rem;
