@@ -25,7 +25,7 @@
 
 /* Your code here */
 /* Phase 5: Improve layout for photo cards by adjusting to browser width */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
     .photo-card {
 	display: flex;
 	flex-direction: column;
@@ -36,8 +36,62 @@
 	display: flex;
 	gap: 1rem;
     }
-    .photo-card .content p {
-	padding: 1rem 0;
+}
+
+/* Wider */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .photo-card {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 49%;
+	/* height: 47rem; */
+	height: 50rem;
+	position: relative;
+    }
+    .photo-card + .photo-card {
+	float: right;
+	margin-left: 0.1rem;
+    }
+    .photo-card a {
+	position: absolute;
+	margin: auto;
+	bottom: 1rem;
+	right: 0;
+	left: 0;
+    }
+    
+    body h2 {
+	clear: both;
     }
 }
 
+/* Widest */
+@media screen and (min-width: 1025px) {
+    .photo-card {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 49%;
+	/* height: 47rem; */
+	height: 25rem;
+	position: relative;
+    }
+    .photo-card .content {
+	display: flex;
+	gap: 1rem;
+    }
+    .photo-card + .photo-card {
+	float: right;
+	margin-left: 0.1rem;
+    }
+    .photo-card a {
+	position: absolute;
+	margin: auto;
+	bottom: 1rem;
+	right: 0;
+	left: 0;
+    }
+    
+    body h2 {
+	clear: both;
+    }
+}
