@@ -53,3 +53,9 @@ nav a.selected {
 }
 
 /* Your code here */
+/* Phase 1: Hide elements while printing */
+@media print {
+    nav {
+	display: none;
+    }
+}
