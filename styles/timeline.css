@@ -91,3 +91,9 @@
 	width: unset;
     }
 }
+@media print and (orientation: portrait) {
+    .timeline-scroll-area {
+	font-size: 0.5;
+	/* width: 200%; */
+    }
+}
