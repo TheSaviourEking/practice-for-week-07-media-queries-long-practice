@@ -88,5 +88,6 @@
 @media print {
     .timeline-scroll-area {
 	overflow-x: visible;
+	width: unset;
     }
 }
