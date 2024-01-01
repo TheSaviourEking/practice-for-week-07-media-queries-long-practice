@@ -76,3 +76,17 @@ nav a.selected {
 	text-decoration: underline;
     }
 }
+
+/* Phase 4: Pretty printing of large images */
+@media print {
+    body {
+	position: relative;
+    }
+    .notPrinted {
+	display: none;
+    }
+    a.notPrinted ~ img {
+	width: 100%;
+    }
+    
+}
