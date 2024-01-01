@@ -66,3 +66,13 @@ nav a.selected {
 	height: 220px;
     }
 }
+
+/* Phase 3: Show underlines on links on rollover and for mobile users */
+@media screen and (min-width: 1200px) {
+    a {
+	text-decoration: none;
+    }
+    a:hover {
+	text-decoration: underline;
+    }
+}
