@@ -59,3 +59,10 @@ nav a.selected {
 	display: none;
     }
 }
+
+/* Phase 2: Improve header size on landing page */
+@media screen and (max-width: 640px) {
+    header.homepage {
+	height: 220px;
+    }
+}
