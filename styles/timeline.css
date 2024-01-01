@@ -85,3 +85,8 @@
 }
 
 /* Your code here */
+@media print {
+    .timeline-scroll-area {
+	overflow-x: visible;
+    }
+}
